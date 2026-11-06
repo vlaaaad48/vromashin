@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111214" />
+    <link rel="icon" href="./favicon.png?v=2" type="image/png" />
+    <link rel="apple-touch-icon" href="./favicon.png?v=2" />
+    <title>Кейс — Владислав Ромашин</title>
+    <script>
+      (() => {
+        const platform = [navigator.userAgentData?.platform, navigator.platform, navigator.userAgent].filter(Boolean).join(' ')
+        if (/(Windows|Win32|Win64|WOW64)/i.test(platform)) document.documentElement.classList.add('is-windows')
+        const theme = localStorage.getItem('portfolio-theme-v2') || 'dark'
+        document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark'
+        try {
+          if (sessionStorage.getItem('portfolio-skip-page-loader') === 'true') {
+            document.documentElement.dataset.skipPageLoader = 'true'
+          }
+        } catch {}
+        const project = new URLSearchParams(window.location.search).get('project')
+        if (project) document.documentElement.dataset.project = project
+      })()
+    </script>
+    <style>
+      body.is-page-loading > *:not(.page-loader) { visibility: hidden; }
+      .page-loader { position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center; align-content: center; gap: 14px; background: #111214; color: #f7f7f8; }
+      .page-loader__orb { width: 34px; height: 34px; border: 2px solid rgba(247,247,248,.18); border-top-color: #f7f7f8; border-radius: 50%; animation: page-loader-spin 800ms linear infinite; }
+      .page-loader__label { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; opacity: .64; }
+      html[data-skip-page-loader] .page-loader { display: none; }
+      html[data-skip-page-loader] body.is-page-loading > *:not(.page-loader) { visibility: visible; }
+      @keyframes page-loader-spin { to { transform: rotate(360deg); } }
+    </style>
+    <script type="module" crossorigin src="./assets/project-BRF10Gub.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-BFhs4eAG.js">
+    <link rel="stylesheet" crossorigin href="./assets/analytics-BgLYzuwY.css">
+    <link rel="stylesheet" crossorigin href="./assets/project-CrNo261g.css">
+  </head>
+  <body class="project-page-body is-page-loading">
+    <div class="page-loader" role="status" aria-live="polite">
+      <span class="page-loader__orb" aria-hidden="true"></span>
+      <span class="page-loader__label">Загрузка</span>
+    </div>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Включить тёмную тему">
+      <span class="rocker-switch" aria-hidden="true">
+        <span class="rocker-switch__surface"><span class="rocker-switch__surface-glare"></span></span>
+        <span class="rocker-switch__inner-shadow"></span>
+        <span class="rocker-switch__inner"><span class="rocker-switch__inner-glare"></span></span>
+        <span class="rocker-switch__shadow"></span>
+        <span class="rocker-switch__sides"><span class="rocker-switch__sides-glare"></span></span>
+        <span class="rocker-switch__rocker"><span class="rocker-switch__rocker-glare"></span></span>
+        <span class="rocker-switch__light"><span class="rocker-switch__light-inner"></span></span>
+        <img class="theme-switch-icon" src="./assets/theme-sun-figma.svg?v=11" alt="" aria-hidden="true" />
+      </span>
+    </button>
+
+    <header class="project-scroll-header" aria-label="Навигация по проекту" aria-hidden="true" inert>
+      <a class="project-scroll-header__link" href="/" aria-label="Назад">
+        <span class="project-scroll-header__back" aria-hidden="true"><img class="project-back__icon" src="./assets/icon-arrow-left.svg?v=1" alt="" /><span class="project-back__fallback">←</span></span>
+        <span class="project-scroll-header__title">Назад</span>
+      </a>
+    </header>
+
+    <main class="project-detail" aria-live="polite">
+      <aside class="line-sidebar line-sidebar--markers line-sidebar--scale-tick" aria-label="Оглавление проекта">
+        <ul class="line-sidebar__list">
+          <li class="line-sidebar__item" data-target="project-overview">
+            <span class="line-sidebar__marker" aria-hidden="true"></span>
+            <a class="line-sidebar__label" href="#project-overview">
+              <span class="line-sidebar__index">01</span>
+              <span class="line-sidebar__text">Продукт</span>
+            </a>
+          </li>
+          <li class="line-sidebar__item" data-target="project-process">
+            <span class="line-sidebar__marker" aria-hidden="true"></span>
+            <a class="line-sidebar__label" href="#project-process">
+              <span class="line-sidebar__index">02</span>
+              <span class="line-sidebar__text">Кейс — Единый польз. сервис</span>
+            </a>
+          </li>
+          <li class="line-sidebar__item" data-target="project-voice">
+            <span class="line-sidebar__marker" aria-hidden="true"></span>
+            <a class="line-sidebar__label" href="#project-voice">
+              <span class="line-sidebar__index">03</span>
+              <span class="line-sidebar__text">Кейс — Voice Mode</span>
+            </a>
+          </li>
+          <li class="line-sidebar__item" data-target="project-onboarding">
+            <span class="line-sidebar__marker" aria-hidden="true"></span>
+            <a class="line-sidebar__label" href="#project-onboarding">
+              <span class="line-sidebar__index">04</span>
+              <span class="line-sidebar__text">Кейс — Механики онбординга</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="project-detail-header">
+        <a class="project-back" href="/"><img class="project-back__icon" src="./assets/icon-arrow-left.svg?v=1" alt="" aria-hidden="true" /><span class="project-back__fallback">←</span><span>Назад</span></a>
+        <h1 class="project-detail-title">Загрузка…</h1>
+        <p class="project-detail-meta"></p>
+      </header>
+
+      <figure class="project-detail-cover">
+        <img class="project-detail-image" src="" alt="" />
+      </figure>
+
+      <section class="project-detail-intro" id="project-overview">
+        <p class="project-detail-label">Продукт</p>
+        <p class="project-detail-description"></p>
+        <div class="project-detail-surfaces" hidden>
+          <p class="project-detail-label">Поверхности и аудитория</p>
+          <p class="project-detail-description project-detail-surfaces-text"></p>
+        </div>
+        <div class="project-detail-tasks">
+          <p class="project-detail-label">Основные задачи</p>
+          <ul class="project-detail-task-list"></ul>
+        </div>
+      </section>
+
+      <article class="project-detail-content" id="project-body">
+        <div class="project-detail-body"></div>
+      </article>
+
+      <nav class="project-next-project" aria-label="Следующий проект" hidden>
+        <a class="project-next-project__link" href="">
+          <span>Следующий проект</span>
+          <span class="project-next-project__icon" aria-hidden="true"></span>
+        </a>
+      </nav>
+
+    </main>
+
+    <footer class="site-footer project-detail-footer">
+      <a href="https://t.me/ro_vlad" target="_blank" rel="noreferrer">Владислав Ромашин</a> © 2026
+    </footer>
+
+  </body>
+</html>

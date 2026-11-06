@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111214" />
+    <meta name="description" content="Портфолио Владислава Ромашина — продуктового дизайнера." />
+    <link rel="icon" href="./favicon.png?v=2" type="image/png" />
+    <link rel="apple-touch-icon" href="./favicon.png?v=2" />
+    <title>Владислав Ромашин — Портфолио</title>
+    <link rel="preload" as="image" href="./assets/figma-avatar.webp?v=12" fetchpriority="high" />
+    <link rel="preload" as="font" href="./assets/8a480f0b521d4e75-s.ea323500-D_Kiv5N3.woff2" type="font/woff2" crossorigin />
+    <script>
+      (() => {
+        const platform = [navigator.userAgentData?.platform, navigator.platform, navigator.userAgent].filter(Boolean).join(' ')
+        if (/(Windows|Win32|Win64|WOW64)/i.test(platform)) document.documentElement.classList.add('is-windows')
+        if (window.location.pathname.endsWith('/index.html')) {
+          window.location.replace(window.location.pathname.slice(0, -'index.html'.length) || '/')
+          return
+        }
+        const theme = localStorage.getItem('portfolio-theme-v2') || 'dark'
+        document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark'
+        try {
+          if (sessionStorage.getItem('portfolio-skip-page-loader') === 'true') {
+            document.documentElement.dataset.skipPageLoader = 'true'
+          }
+          if (sessionStorage.getItem('portfolio-home-scroll-y') !== null) {
+            document.documentElement.dataset.restoreHomeScroll = 'true'
+          }
+        } catch {}
+      })()
+    </script>
+    <style>
+      body.is-page-loading > *:not(.page-loader) { visibility: hidden; }
+      .page-loader { position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center; align-content: center; gap: 14px; background: #111214; color: #f7f7f8; }
+      .page-loader__orb { width: 34px; height: 34px; border: 2px solid rgba(247,247,248,.18); border-top-color: #f7f7f8; border-radius: 50%; animation: page-loader-spin 800ms linear infinite; }
+      .page-loader__label { font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; opacity: .64; }
+      html[data-skip-page-loader] .page-loader { display: none; }
+      html[data-skip-page-loader] body.is-page-loading > *:not(.page-loader) { visibility: visible; }
+      html[data-restore-home-scroll] body > *:not(.page-loader) { visibility: hidden !important; }
+      html[data-restore-home-scroll] .scroll-header,
+      @keyframes page-loader-spin { to { transform: rotate(360deg); } }
+    </style>
+    <script type="module" crossorigin src="./assets/main-D7sURaF_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/analytics-BFhs4eAG.js">
+    <link rel="stylesheet" crossorigin href="./assets/analytics-BgLYzuwY.css">
+  </head>
+  <body class="is-page-loading">
+    <div class="page-loader" role="status" aria-live="polite">
+      <span class="page-loader__orb" aria-hidden="true"></span>
+      <span class="page-loader__label">Загрузка</span>
+    </div>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Включить тёмную тему">
+      <span class="rocker-switch" aria-hidden="true">
+        <span class="rocker-switch__surface"><span class="rocker-switch__surface-glare"></span></span>
+        <span class="rocker-switch__inner-shadow"></span>
+        <span class="rocker-switch__inner"><span class="rocker-switch__inner-glare"></span></span>
+        <span class="rocker-switch__shadow"></span>
+        <span class="rocker-switch__sides"><span class="rocker-switch__sides-glare"></span></span>
+        <span class="rocker-switch__rocker"><span class="rocker-switch__rocker-glare"></span></span>
+        <span class="rocker-switch__light"><span class="rocker-switch__light-inner"></span></span>
+        <img class="theme-switch-icon" src="./assets/theme-sun-figma.svg?v=11" alt="" aria-hidden="true" loading="eager" decoding="async" />
+      </span>
+    </button>
+
+    <header class="scroll-header" aria-label="Быстрые ссылки" aria-hidden="true" inert>
+      <button class="header-menu-toggle" type="button" aria-expanded="false" aria-controls="header-contact-menu" aria-label="Открыть меню">
+        <img class="header-menu-icon" src="./assets/theme-menu.svg?v=11" alt="" aria-hidden="true" loading="eager" decoding="async" />
+      </button>
+      <nav class="contact-links header-contact-links" id="header-contact-menu" aria-label="Контакты в шапке" hidden>
+        <a href="https://t.me/ro_vlad" target="_blank" rel="noreferrer">Телеграм</a>
+        <a href="mailto:romashin.ru@yandex.ru">Почта</a>
+        <a href="https://drive.google.com/file/d/1jzQHmK-ajuaoSpQ2Ey8kXQypOFwo5Rhb/view?usp=sharing" target="_blank" rel="noreferrer">Резюме</a>
+      </nav>
+    </header>
+
+    <main class="portfolio-page" id="top">
+      <section class="portfolio-hero" aria-labelledby="profile-name">
+        <div class="avatar-frame" aria-hidden="true">
+          <img class="avatar-image" src="./assets/figma-avatar.webp?v=12" alt="" loading="eager" fetchpriority="high" decoding="async" />
+        </div>
+
+        <div class="intro-copy">
+          <h1 id="profile-name">Владислав Ромашин</h1>
+          <p>Более 5 лет проектирую B2C и&nbsp;B2B-продукты. Использую AI-инструменты для&nbsp;быстрого прототипирования, проверки гипотез и&nbsp;создания цифровых продуктов.</p>
+        </div>
+
+        <nav class="contact-links" aria-label="Контакты">
+          <a href="https://t.me/ro_vlad" target="_blank" rel="noreferrer">Телеграм</a>
+          <a href="mailto:romashin.ru@yandex.ru">Почта</a>
+          <a href="https://drive.google.com/file/d/1jzQHmK-ajuaoSpQ2Ey8kXQypOFwo5Rhb/view?usp=sharing" target="_blank" rel="noreferrer">Резюме</a>
+        </nav>
+
+      </section>
+
+      <section class="portfolio-panel projects-panel" id="projects-panel">
+        <div class="panel-placeholder">
+          <div class="project-grid" aria-label="Примеры проектов">
+            <figure class="project-card" data-project="giga-chat" role="link" tabindex="0" aria-label="Открыть проект ГигаЧат — ИИ-помощник от Сбера">
+              <img width="1200" height="900" src="./assets/giga-chat-cover-ClPDXY_e.webp?v=1" alt="Интерфейс ГигаЧата на планшете и смартфоне" loading="lazy" decoding="async" />
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>ГигаЧат • ИИ-помощник от&nbsp;Сбера</figcaption>
+                  </div>
+                  <p>Старший продуктовый дизайнер • <span class="project-period">2025 — по н.в.</span></p>
+                </div>
+              </div>
+            </figure>
+            <figure class="project-card project-card--innotech" data-project="innotech" role="link" tabindex="0" aria-label="Открыть проект Иннотех — платформа облачной инфраструктуры банка ВТБ">
+              <img width="1200" height="900" src="./assets/innotech-cover-kKKkRMpD.webp?v=1" alt="Платформа облачной инфраструктуры банка ВТБ" loading="lazy" decoding="async" />
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>Иннотех • Платформа облачной инфраструктуры банка ВТБ</figcaption>
+                  </div>
+                  <p>Старший продуктовый дизайнер • <span class="project-period">2024 — 2025</span></p>
+                </div>
+              </div>
+            </figure>
+            <figure class="project-card project-card--shooting" data-project="shooting" role="link" tabindex="0" aria-label="Открыть проект Съёмка — приложение для заказа фотосессий">
+              <div class="project-card__media">
+                <img width="1200" height="900" src="./assets/shooting-cover-DORNA6p1.webp?v=1" alt="Съёмка — приложение для заказа фотосессий" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>Съёмка • Приложение для заказа фотосессий</figcaption>
+                  </div>
+                  <p>
+                    <a class="project-card__link" href="https://apps.apple.com/ru/app/%D1%81%D1%8A%D1%91%D0%BC%D0%BA%D0%B0-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B5-%D1%84%D0%BE%D1%82%D0%BE%D1%81%D0%B5%D1%81%D1%81%D0%B8%D0%B8/id6747723756" target="_blank" rel="noreferrer">App Store</a>
+                    <span aria-hidden="true">&nbsp;&nbsp;</span>
+                    <a class="project-card__link" href="https://play.google.com/store/apps/details?id=com.syomka.client&amp;pli=1" target="_blank" rel="noreferrer">Google Play</a>
+                  </p>
+                </div>
+              </div>
+            </figure>
+            <figure class="project-card project-card--love-form" data-project="love-form" role="link" tabindex="0" aria-label="Открыть проект Love Form — онлайн-конструктор форм и опросов">
+              <img width="1200" height="900" src="./assets/love-form-cover-BrwQHeK-.webp?v=1" alt="Love Form — онлайн-конструктор форм и опросов" loading="lazy" decoding="async" />
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>Love Form • Онлайн-конструктор форм и опросов</figcaption>
+                  </div>
+                  <p>Пет-проект</p>
+                </div>
+              </div>
+            </figure>
+            <figure class="project-card project-card--beseed" data-project="beseed" role="link" tabindex="0" aria-label="Открыть проект BeSeed — маркетплейс нативной рекламы">
+              <img width="1200" height="900" src="./assets/beseed-cover-CsL7M8zO.webp?v=13" alt="BeSeed — маркетплейс нативной рекламы" loading="lazy" decoding="async" />
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>BeSeed • Маркетплейс нативной рекламы</figcaption>
+                  </div>
+                  <p>Продуктовый дизайнер • <span class="project-period">2022–2024</span></p>
+                </div>
+              </div>
+            </figure>
+            <figure class="project-card project-card--rt-mis" data-project="rt-mis" role="link" tabindex="0" aria-label="Открыть проект РТ МИС — портал для врачей">
+              <img width="1200" height="900" src="./assets/rt-mis-cover-CKveydQQ.webp?v=1" alt="РТ МИС — портал для врачей" loading="lazy" decoding="async" />
+              <div class="project-meta">
+                <div class="project-copy">
+                  <div class="project-title-row">
+                    <figcaption>РТ МИС • Портал для врачей</figcaption>
+                  </div>
+                  <p>Продуктовый дизайнер • <span class="project-period">2021 — 2022</span></p>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-panel" id="concepts-panel">
+        <h2 class="portfolio-section-title portfolio-section-title--concepts" id="concepts-heading">Концепты</h2>
+        <div class="panel-placeholder">
+          <div class="concepts-masonry" aria-label="Концепты">
+            <figure class="concepts-masonry__item">
+              <video width="1920" height="1080" data-autoplay autoplay muted loop playsinline preload="auto" poster="./assets/case-1-poster.webp?v=1" src="./assets/case-1-DBvBffP-.mp4?v=15" aria-label="Видео концепта"></video>
+            </figure>
+            <figure class="concepts-masonry__item">
+              <picture>
+                <source data-src="./assets/innotech-drag.avif?v=11" type="image/avif" />
+                <img width="1800" height="1012" data-src="./assets/innotech-drag.webp?v=11" alt="Концепт интерфейса электронной очереди" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+            <figure class="concepts-masonry__item">
+              <img width="2048" height="1536" src="./assets/study-2.webp?v=12" alt="Концепт финансового дашборда" loading="eager" fetchpriority="high" decoding="async" />
+            </figure>
+            <figure class="concepts-masonry__item">
+              <img width="1024" height="768" data-src="./assets/aviaseilz.gif?v=11" alt="Анимационный концепт Авиасейлз" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="concepts-masonry__item">
+              <video width="960" height="620" data-autoplay autoplay muted loop playsinline preload="auto" poster="./assets/onboarding-poster.webp?v=1" src="./assets/onboarding-D4bNmdvc.mp4?v=12" aria-label="Видео концепта онбординга"></video>
+            </figure>
+            <figure class="concepts-masonry__item">
+              <picture>
+                <source data-src="./assets/concept-study-1.avif?v=11" type="image/avif" />
+                <img width="1800" height="1279" data-src="./assets/concept-study-1.webp?v=11" alt="Study 1 — концепт криптовалютного интерфейса" loading="lazy" decoding="async" />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-panel" id="bio-panel" aria-labelledby="bio-heading">
+        <h2 class="portfolio-section-title portfolio-section-title--bio" id="bio-heading">О себе</h2>
+        <div class="panel-placeholder" id="resume">
+          <div class="bio-copy">
+            <p>В&nbsp;дизайн я пришёл ещё в&nbsp;университете, где учился на&nbsp;инженера-строителя. Сначала делал графику для&nbsp;студенческих проектов и&nbsp;отрядов, а&nbsp;потом увлёкся интерфейсами и&nbsp;начал учиться самостоятельно.</p>
+            <p>С&nbsp;тех пор успел поработать со&nbsp;стартапами, в&nbsp;студии и&nbsp;в&nbsp;бигтехах. Больше всего люблю задачи, где нужно не&nbsp;просто нарисовать экран, а&nbsp;разобраться в&nbsp;системе, принять решение и&nbsp;довести его до&nbsp;результата.</p>
+            <p>Продолжаю учиться, участвую в&nbsp;дизайн-челленджах и&nbsp;конференциях, иногда сам выхожу на&nbsp;сцену.</p>
+            <p>Моя главная мотивация в&nbsp;работе — не&nbsp;только рост метрик, но&nbsp;и когда мне говорят: «А*уенный дизайн».</p>
+            <p>У&nbsp;меня есть опыт публичных выступлений: несколько раз выступал на&nbsp;конференциях с&nbsp;аудиторией более 500 человек.</p>
+            <p>Несколько лет преподавал UX/UI-дизайн в&nbsp;<a href="https://contented.ru" target="_blank" rel="noreferrer">Contented</a> и&nbsp;<a href="https://loftschool.com" target="_blank" rel="noreferrer">LoftSchool</a>. Сейчас консультирую дизайнеров по&nbsp;карьере, навыкам и&nbsp;индивидуальному плану развития.</p>
+            <p>Я люблю путешествовать, занимаюсь фридайвингом и&nbsp;люблю рыбалку.</p>
+            <p>Дома меня ждут жена и&nbsp;кот.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://t.me/ro_vlad" target="_blank" rel="noreferrer">Владислав Ромашин</a> © 2026
+    </footer>
+
+  </body>
+</html>
